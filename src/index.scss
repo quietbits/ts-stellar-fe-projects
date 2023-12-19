@@ -1,1 +1,116 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight&family=Inter:wght@400;500;600&family=Roboto+Mono&display=swap");
+
+body {
+  color: var(--color-gray-70);
+}
+
+.Heading,
+.Title {
+  color: var(--color-gray-80);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1.Heading {
+  margin-bottom: 1rem;
+}
+
+// SDS overrides
+#root {
+  p {
+    color: inherit;
+  }
+}
+
+.ProjectList {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  border-top: 1px solid var(--color-gray-30);
+  border-bottom: 1px solid var(--color-gray-30);
+  padding: 1rem 0;
+
+  a {
+    display: block;
+    text-wrap: nowrap;
+  }
+}
+
+.ProjectsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Project {
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--color-gray-30);
+    padding-bottom: 2rem;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+
+    &__links {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+
+      svg {
+        display: block;
+        width: 1.7rem;
+        height: 1.7rem;
+      }
+    }
+  }
+
+  &__packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 1rem;
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  &__section {
+    line-height: 1.5;
+  }
+
+  &__workspace {
+    margin-top: 1rem;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--color-gray-20);
+      padding-bottom: 2rem;
+    }
+
+    .Heading {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      margin-bottom: 1rem;
+
+      svg {
+        fill: var(--color-purple-60);
+      }
+    }
+  }
+
+  &__package {
+    &__version {
+      color: var(--color-gray-80);
+    }
+  }
+
+  .Title {
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+}
