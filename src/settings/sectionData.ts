@@ -62,6 +62,7 @@ export const sectionData = [
       "@stellar/eslint-config",
       "@stellar/prettier-config",
       "@stellar/tsconfig",
+      "@stellar/wallet-sdk",
     ],
   },
 ];
