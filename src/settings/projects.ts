@@ -14,6 +14,14 @@ export const projects = [
     website: "https://amm-demo.stellar.org/",
   },
   {
+    id: "stellar-anchor-tests",
+    name: "Anchor Validator",
+    repo: "https://github.com/stellar/stellar-anchor-tests",
+    defaultBranch: "master",
+    website: "https://anchor-tests.stellar.org/",
+    workspaces: ["@stellar/anchor-tests", "ui", "server"],
+  },
+  {
     id: "dashboard",
     name: "Dashboard",
     repo: "https://github.com/stellar/dashboard",
