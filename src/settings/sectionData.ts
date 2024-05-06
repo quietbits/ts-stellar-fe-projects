@@ -56,6 +56,7 @@ export const sectionData = [
     packages: [
       "stellar-sdk",
       "stellar-base",
+      "@stellar/stellar-sdk",
       "@stellar/design-system",
       "@stellar/freighter-api",
       "@stellar/frontend-helpers",
